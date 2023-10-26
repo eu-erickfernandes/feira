@@ -1,0 +1,10 @@
+.containerFormulario, .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.containerFormulario h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+}

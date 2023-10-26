@@ -1,0 +1,14 @@
+.item, .containerBotoes{
+    align-items: center;
+    display: flex;
+}
+
+.item{
+    border: 1px solid #c1c1c1;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.containerBotoes{
+    gap: .5rem;
+}

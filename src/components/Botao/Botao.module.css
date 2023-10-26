@@ -1,0 +1,14 @@
+.botao{
+    background-color: hsl(220, 80%, 50%);
+    border: none;
+    border-radius: .5rem;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 500;
+    padding-block: .5rem;
+    transition: .5s;
+
+    &:is(:hover, :focus){
+        background-color: hsl(220, 80%, 55%);
+    }
+}
