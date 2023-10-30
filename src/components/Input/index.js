@@ -1,6 +1,6 @@
 import styles from './Input.module.css'
 
-const Input = ({ label, name, type, value, placeholder, onChange }) => {
+const Input = ({ label, name, value, placeholder, onChange, mascara }) => {
     const handleChange = (evento) => {
         onChange(evento.target.value)
     }
@@ -12,12 +12,13 @@ const Input = ({ label, name, type, value, placeholder, onChange }) => {
             <input
                 className={ styles.input } 
                 id={ `campo-${name}` }
+                inputMode={ mascara && 'decimal' }
                 name={ name }
-                type={ type }
-                value={ value }
                 onChange={ handleChange }
                 placeholder={ placeholder }
                 required 
+                type='text'
+                value={ value }
             />
         </div>
     )

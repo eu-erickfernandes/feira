@@ -15,7 +15,7 @@ const ItemProduto = ({ id, nome, preco, quantidade }) => {
 
     return(
         <li className={ styles.item }>
-            <span>{ nome } - { preco }</span>
+            <span>{id} - { nome } - { preco }</span>
 
             <div className={ styles.containerBotoes }>
                 <button onClick={ diminuiQuantidade } disabled={ quantidade === 1 }>-</button>

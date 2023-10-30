@@ -1,19 +1,24 @@
 import { createContext, useContext, useState } from "react";
+import { FeiraContext } from "./Feira";
 
 export const ProdutoContext = createContext()
 ProdutoContext.displayName = 'Produto'
 
 export const ProdutoProvider = ({ children }) => {
-    const [produtos, setProdutos] = useState([])
+    const { 
+        produtos, 
+        setProdutos 
+    } = useContext(FeiraContext)
+    // const [produtos, setProdutos] = useState([])
 
     const [id, setId] = useState(0)
     const [nome, setNome] = useState('')
     const [preco, setPreco] = useState(0)
     const [quantidade, setQuantidade] = useState(1)
 
-    const adicionaProduto = (produto) => {
-        setProdutos([...produtos, produto])
-    }
+    // const adicionaProduto = (produto) => {
+    //     setProdutos([...produtos, produto])
+    // }
 
     const mudaQuantidade = (id, qtd) => {
         setProdutos(produtos.map(produto => {
@@ -39,8 +44,8 @@ export const ProdutoProvider = ({ children }) => {
                 setPreco, 
                 quantidade, 
                 setQuantidade,
-                produtos,
-                adicionaProduto,
+                // produtos,
+                // adicionaProduto,
                 mudaQuantidade
             }}>
             

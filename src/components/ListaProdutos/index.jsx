@@ -1,11 +1,9 @@
 import { useContext } from "react"
-import { ProdutoContext } from "../../common/context/Produto"
+import { FeiraContext } from "../../common/context/Feira"
 import ItemProduto from "./ItemProduto"
 import styles from './ListaProduto.module.css'
 
-const ListaProdutos = () => {
-    const { produtos } = useContext(ProdutoContext)
-
+const ListaProdutos = ({ produtos }) => {
     return(
         <div className={ styles.containerLista }>
             <h2>Produtos ({ produtos.length })</h2>
