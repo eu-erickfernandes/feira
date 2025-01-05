@@ -5,6 +5,7 @@
         <ul>
             <li><a href="{{ route('categories.index') }}">Categorias</a></li>
             <li><a href="{{ route('items.index') }}">Produtos</a></li>
+            <li><a href="{{ route('stores.index') }}">Lojas</a></li>
         </ul>
     </main>
 </x-layout>

@@ -1,10 +1,10 @@
-<x-layout title="Adicionar Categoria">
+<x-layout title="Adicionar Loja">
     <x-header
-        title="Adicionar Categoria"
+        title="Adicionar Loja"
     />
 
     <main>
-        <form action="{{ route('categories.store') }}" method="post">
+        <form action="{{ route('stores.store') }}" method="post">
             @csrf
 
             <div>
